@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Các CLB — THPT Võ Nguyên Giáp</title>
+
+<style>
+html{
+scroll-behavior:smooth;
+}
+
+/* tránh bị che khi cuộn */
+.club{
+scroll-margin-top:130px;
+}
+
+/* hiệu ứng sáng khi active */
+.club-nav a.active{
+background:linear-gradient(45deg,#ffe600,#00ffff);
+color:black;
+box-shadow:0 0 20px #00ffff;
+}
+html{
+scroll-behavior:smooth;
+}
+
+/* sửa lỗi bị che khi cuộn */
+.club{
+scroll-margin-top:120px;
+}
+/* cuộn mượt */
+html{
+scroll-behavior:smooth;
+}
+
+/* MENU CLB */
+.club-nav{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+z-index:2000;
+
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+padding:15px;
+background:rgba(0,0,0,0.6);
+backdrop-filter:blur(10px);
+box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+.container{
+margin-top:90px;
+}
+.club-nav{
+position:sticky;
+top:0;
+z-index:999;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:12px;
+padding:15px;
+background:rgba(0,0,0,0.4);
+backdrop-filter:blur(10px);
+box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+.club-nav a{
+text-decoration:none;
+padding:10px 18px;
+border-radius:25px;
+font-weight:bold;
+color:white;
+background:linear-gradient(45deg,#ff00cc,#3333ff);
+transition:0.3s;
+box-shadow:0 0 10px rgba(255,0,200,0.6);
+}
+
+.club-nav a:hover{
+transform:scale(1.1);
+background:linear-gradient(45deg,#ffe600,#00ffff);
+color:black;
+box-shadow:0 0 20px #00ffff;
+}
+/* ===== BẢNG HEADER ===== */
+header table{
+    width:100%;
+    max-width:900px;
+    margin:25px auto 0;
+    border-collapse:collapse;
+    background:rgba(255,255,255,0.15);
+    backdrop-filter:blur(8px);
+    border-radius:12px;
+    overflow:hidden;
+}
+
+/* ô trong bảng */
+header th, 
+header td{
+    border:1px solid rgba(255,255,255,0.6);
+    padding:10px;
+    text-align:center;
+    color:white;
+}
+
+/* dòng tiêu đề */
+header th{
+    background:rgba(0,0,0,0.4);
+    font-weight:bold;
+    font-size:16px;
+}
+
+/* hover từng dòng */
+header tr:hover{
+    background:rgba(255,255,255,0.15);
+}
+
+*{box-sizing:border-box}
+
+body{
+    margin:0;
+    font-family:'Segoe UI',sans-serif;
+    background: linear-gradient(135deg,#ff00cc,#3333ff,#00ffcc);
+    background-size:400% 400%;
+    animation:bg 12s infinite alternate;
+}
+
+/* nền động */
+@keyframes bg{
+    0%{background-position:left}
+    100%{background-position:right}
+}
+
+/* header */
+header{
+    text-align:center;
+    color:white;
+    padding:45px 20px;
+    background:rgba(0,0,0,0.35);
+    backdrop-filter:blur(10px);
+    box-shadow:0 8px 25px rgba(0,0,0,0.5);
+}
+
+header h1{
+    margin:0;
+    font-size:42px;
+}
+
+.container{
+    width:92%;
+    max-width:1100px;
+    margin:auto;
+    padding-bottom:50px;
+}
+
+/* card CLB */
+.club{
+    background:white;
+    margin:35px 0;
+    padding:25px;
+    border-radius:22px;
+    box-shadow:0 15px 35px rgba(0,0,0,0.45);
+    transition:0.35s;
+}
+
+.club:hover{
+    transform:translateY(-8px) scale(1.02);
+}
+
+.club h2{
+    margin-top:0;
+    color:#ff0080;
+}
+
+/* khung thông tin */
+.info{
+    background:linear-gradient(90deg,#ffe600,#00ffff);
+    padding:15px;
+    border-radius:14px;
+    margin:15px 0;
+    font-weight:500;
+}
+
+/* ảnh */
+.club img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+    border-radius:16px;
+    margin-top:10px;
+}
+
+/* footer */
+footer{
+    text-align:center;
+    color:white;
+    padding:25px;
+    background:rgba(0,0,0,0.35);
+    font-size:18px;
+}
+
+/* mobile */
+@media(max-width:600px){
+    header h1{font-size:28px}
+    .club img{height:200px}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav class="club-nav">
+<a href="#stem">STEM</a>
+<a href="#vanhoa">Văn hóa đọc</a>
+<a href="#songxanh">Sống xanh</a>
+<a href="#phapluat">Pháp luật</a>
+<a href="#vannghe">Văn nghệ</a>
+<a href="#tienganh">Tiếng Anh</a>
+<a href="#thethao">Thể thao</a>
+</nav>
+    
+<h1>🌟 CÁC CÂU LẠC BỘ 🌟</h1>
+<h2>Trường THPT Võ Nguyên Giáp</h2>
+<p>Lịch sinh hoạt chung: Chiều thứ 4 hằng tuần — 14h00</p>
+
+<table>
+<tr>
+<th>STT</th>
+<th>Tuần</th>
+<th>Câu lạc bộ</th>
+<th>Người phụ trách</th>
+</tr>
+<tr><td>1</td><td>1</td><td>CLB STEM</td><td>Phan Thị Diệp</td></tr>
+<tr><td>2</td><td>1</td><td>CLB Văn hóa đọc</td><td>Vũ Thị Lan Hương</td></tr>
+<tr><td>3</td><td>2</td><td>CLB Sống xanh</td><td>Nguyễn Thị Thúy Hằng</td></tr>
+<tr><td>4</td><td>2</td><td>CLB Pháp luật</td><td>Phạm Thị Tám</td></tr>
+<tr><td>5</td><td>3</td><td>CLB Văn nghệ</td><td>Nguyễn Thị Ly</td></tr>
+<tr><td>6</td><td>4</td><td>CLB Tiếng Anh</td><td>Nguyễn Thanh Nhã</td></tr>
+<tr><td>7</td><td>4</td><td>CLB Thể dục thể thao</td><td>Đỗ Tấn Khương</td></tr>
+</table>
+</div>
+</header>
+
+<div class="container">
+  <!-- STEM -->
+<div class="club" id="stem">
+<div class="club"
+<h2>🚀 CLB STEM</h2>
+<div class="info">
+<b>Tôn chỉ:</b> Khơi dậy niềm đam mê khoa học — công nghệ, phát triển tư duy sáng tạo và khả năng nghiên cứu thông qua các dự án thực tiễn.<br><br>
+<b>Tiêu chí:</b> Sáng tạo — Tư duy logic — Hợp tác — Ứng dụng — Đổi mới.<br><br>
+<b>Lịch hoạt động:</b> Chiều thứ 4 hằng tuần.<br>
+<b>Người phụ trách:</b> Phan Thị Điệp.
+</div>
+<a href="https://ibb.co/Xfvyh5zf"><img src="https://i.ibb.co/GfbsKMVf/IMG-1771434493322-1771434588527.jpg" alt="IMG-1771434493322-1771434588527" border="0"></a>
+</div>
+
+<!-- VĂN HÓA ĐỌC -->
+<div class="club" id="vanhoa">
+<h2>📚 CLB Văn hóa đọc</h2>
+<div class="info">
+<b>Tôn chỉ:</b> Lan tỏa tình yêu sách, xây dựng thói quen đọc và tự học suốt đời.<br><br>
+<b>Tiêu chí:</b> Hiểu sâu — Chia sẻ tri thức — Nhân văn — Phát triển bản thân.<br><br>
+<b>Lịch hoạt động:</b> Chiều thứ 4 hằng tuần.<br>
+<b>Người phụ trách:</b> Vũ Thị Lan Hương.
+</div>
+<a href="https://ibb.co/RkWCbTZK"><img src="https://i.ibb.co/HfQr4T1y/IMG-1771676369962-1771676385757.jpg" alt="IMG-1771676369962-1771676385757" border="0"></a>
+</div>
+
+<!-- SỐNG XANH -->
+<div class="club" id="songxanh">
+<h2>🌿 CLB Sống xanh</h2>
+<div class="info">
+<b>Tôn chỉ:</b> Nâng cao ý thức bảo vệ môi trường và phát triển bền vững.<br><br>
+<b>Tiêu chí:</b> Hành động — Trách nhiệm — Lan tỏa — Bền vững.<br><br>
+<b>Lịch hoạt động:</b> Chiều thứ 4 hằng tuần.<br>
+<b>Người phụ trách:</b> Nguyễn Thị Thúy Hằng.
+</div>
+<a href="https://ibb.co/y7BXf10"><img src="https://i.ibb.co/BFKtzxL/IMG-1771685140373-1771685205273.jpg" alt="IMG-1771685140373-1771685205273" border="0"></a>
+</div>
+
+<!-- PHÁP LUẬT -->
+<div class="club" id="phapluat">
+<h2>⚖️ CLB Pháp luật</h2>
+<div class="info">
+<b>Tôn chỉ:</b> Trang bị kiến thức pháp luật, nâng cao ý thức công dân và xây dựng môi trường học đường văn minh.<br><br>
+<b>Tiêu chí:</b> Hiểu luật — Sống đúng — Trách nhiệm.<br><br>
+<b>Lịch hoạt động:</b> Chiều thứ 4 hằng tuần.<br>
+<b>Người phụ trách:</b> Phạm Thị Tám.
+</div>
+<a href="https://ibb.co/JFgXVQC2"><img src="https://i.ibb.co/h1wpbfCH/IMG-1771685159612-1771685209124.jpg" alt="IMG-1771685159612-1771685209124" border="0"></a>
+</div>
+
+<!-- VĂN NGHỆ -->
+<div class="club" id="vannghe">
+<h2>🎤 CLB Văn nghệ</h2>
+<div class="info">
+<b>Tôn chỉ:</b> Phát triển năng khiếu nghệ thuật, tạo sân chơi sáng tạo và lành mạnh.<br><br>
+<b>Tiêu chí:</b> Đam mê — Sáng tạo — Tỏa sáng — Gắn kết.<br><br>
+<b>Lịch hoạt động:</b> Chiều thứ 4 hằng tuần.<br>
+<b>Người phụ trách:</b> Nguyễn Thị Ly.
+</div>
+<a href="https://ibb.co/4g1KBtnd"><img src="https://i.ibb.co/k6m5YBs1/IMG-20260218-164701.jpg" alt="IMG-20260218-164701" border="0"></a>
+</div>
+
+<!-- TIẾNG ANH -->
+<div class="club" id="tienganh">
+<h2>🌍 CLB Tiếng Anh</h2>
+<div class="info">
+<b>Tôn chỉ:</b> Tạo môi trường giao tiếp tiếng Anh tự nhiên, giúp học sinh tự tin hội nhập quốc tế.<br><br>
+<b>Tiêu chí:</b> Tự tin — Chủ động — Hội nhập — Phát triển toàn diện.<br><br>
+<b>Lịch hoạt động:</b> Chiều thứ 4 hằng tuần.<br>
+<b>Người phụ trách:</b> Nguyễn Thanh Nhã.
+</div>
+<a href="https://ibb.co/zHHp7hzX"><img src="https://i.ibb.co/YTTmy7xc/IMG-1771685146028-1771685207290.jpg" alt="IMG-1771685146028-1771685207290" border="0"></a>
+</div>
+
+<!-- THỂ THAO -->
+<div class="club" id="thethao">
+<h2>🏆 CLB Thể dục thể thao</h2>
+<div class="info">
+<b>Tôn chỉ:</b> Rèn luyện thể chất, nâng cao sức khỏe và tinh thần đồng đội.<br><br>
+<b>Tiêu chí:</b> Khỏe mạnh — Kỷ luật — Đoàn kết — Bản lĩnh.<br><br>
+<b>Lịch hoạt động:</b> Chiều thứ 4 hằng tuần.<br>
+<b>Người phụ trách:</b> Đỗ Tấn Khương.
+</div>
+<a href="https://ibb.co/sd8N7HSy"><img src="https://i.ibb.co/LXVcK5wn/thethao3.jpg" alt="thethao3" border="0"></a>
+</div>
+
+</div>
+
+<footer>
+✨ Người thực hiện: Trần Ngọc Bảo Châu — Lớp 12A3 ✨
+</footer>
+<script>
+const sections = document.querySelectorAll(".club");
+const navLinks = document.querySelectorAll(".club-nav a");
+
+window.addEventListener("scroll", () => {
+let current = "";
+
+sections.forEach(section => {
+const sectionTop = section.offsetTop - 150;
+if(window.pageYOffset >= sectionTop){
+current = section.getAttribute("id");
+}
+});
+
+navLinks.forEach(link => {
+link.classList.remove("active");
+if(link.getAttribute("href") === "#" + current){
+link.classList.add("active");
+}
+});
+});
+</script>
+</body>
+</html>
